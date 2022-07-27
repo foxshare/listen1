@@ -1,6 +1,6 @@
 document.getElementById("downloadMusic").addEventListener("click", downloadMusic);
 function downloadMusic(){
-    console.log("开始下载")
+    notyf.success("开始下载");
     function download(url, title) {
       axios.get(url, { responseType: "blob" })
         .then(resp => {
